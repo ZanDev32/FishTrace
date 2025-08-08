@@ -42,6 +42,18 @@ function Navbar({ user }) {
                   <span>Dashboard</span>
                 </Link>
                 <Link
+                  to="/trace"
+                  className="flex items-center space-x-1 text-gray-600 hover:text-primary-500 transition-colors"
+                >
+                  <span>Fish Origin</span>
+                </Link>
+                <Link
+                  to="/trace/new"
+                  className="btn-primary"
+                >
+                  Input Fish Origin
+                </Link>
+                <Link
                   to="/profile"
                   className="flex items-center space-x-1 text-gray-600 hover:text-primary-500 transition-colors"
                 >

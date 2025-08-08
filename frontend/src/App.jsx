@@ -8,6 +8,8 @@ import Login from './pages/Login'
 import Dashboard from './pages/Dashboard'
 import Profile from './pages/Profile'
 import LoadingSpinner from './components/LoadingSpinner'
+import FishTraceForm from './pages/FishTraceForm'
+import FishTraceList from './pages/FishTraceList'
 
 function App() {
   const { user, loading } = useAuthState()
@@ -24,6 +26,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/dashboard" element={user ? <Dashboard /> : <Login />} />
+          <Route path="/trace" element={user ? <FishTraceList /> : <Login />} />
+          <Route path="/trace/new" element={user ? <FishTraceForm /> : <Login />} />
           <Route path="/profile" element={user ? <Profile user={user} /> : <Login />} />
         </Routes>
       </main>

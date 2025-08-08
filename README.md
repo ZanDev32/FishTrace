@@ -14,7 +14,8 @@ A modern Progressive Web App built with React.js, Supabase, and Tailwind CSS.
 ### Prerequisites
 
 - Node.js 16+ 
-- pnpm (install with `npm install -g pnpm`)
+- pnpm (install with `npm install -g pnpm`)  
+  Note: You can use npm instead of pnpm; commands for both are shown below.
 - Supabase account
 
 ### Installation
@@ -28,6 +29,8 @@ A modern Progressive Web App built with React.js, Supabase, and Tailwind CSS.
 2. **Install dependencies**
    ```bash
    pnpm install
+   # or
+   npm install
    ```
 
 3. **Set up environment variables**
@@ -49,6 +52,8 @@ A modern Progressive Web App built with React.js, Supabase, and Tailwind CSS.
 5. **Start the development server**
    ```bash
    pnpm dev
+   # or
+   npm run dev
    ```
 
    The app will be available at `http://localhost:3000`
@@ -57,12 +62,16 @@ A modern Progressive Web App built with React.js, Supabase, and Tailwind CSS.
 
 ```bash
 pnpm build
+# or
+npm run build
 ```
 
 ### Preview Production Build
 
 ```bash
 pnpm preview
+# or
+npm run preview
 ```
 
 ## Project Structure
@@ -87,10 +96,10 @@ frontend/
 
 ## Available Scripts
 
-- `pnpm dev` - Start development server
-- `pnpm build` - Build for production
-- `pnpm preview` - Preview production build
-- `pnpm lint` - Run ESLint
+- `pnpm dev` (or `npm run dev`) - Start development server
+- `pnpm build` (or `npm run build`) - Build for production
+- `pnpm preview` (or `npm run preview`) - Preview production build
+- `pnpm lint` (or `npm run lint`) - Run ESLint
 
 ## Features Overview
 
